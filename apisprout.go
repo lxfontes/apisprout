@@ -600,6 +600,8 @@ var handler = func(rr *RefreshableRouter) http.Handler {
 // server loads an OpenAPI file and runs a mock server using the paths and
 // examples defined in the file.
 func server(cmd *cobra.Command, args []string) {
+	registerStringFormats()
+
 	var swagger *openapi3.Swagger
 	rr := NewRefreshableRouter()
 

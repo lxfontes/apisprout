@@ -32,6 +32,10 @@ func getSchemaExample(schema *openapi3.Schema) (interface{}, bool) {
 	return nil, false
 }
 
+func registerStringFormats() {
+	openapi3.DefineStringFormat("uuid", openapi3.FormatOfStringForUUIDOfRFC4122)
+}
+
 // stringFormatExample returns an example string based on the given format.
 // http://json-schema.org/latest/json-schema-validation.html#rfc.section.7.3
 func stringFormatExample(format string) string {

@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/fsnotify/fsnotify v1.4.7
-	github.com/getkin/kin-openapi v0.2.0
+	github.com/getkin/kin-openapi v0.3.1
 	github.com/gobwas/glob v0.2.3
 	github.com/magiconair/properties v1.8.1 // indirect
 	github.com/pelletier/go-toml v1.4.0 // indirect
@@ -17,5 +17,5 @@ require (
 	github.com/stretchr/testify v1.3.0
 	golang.org/x/sys v0.0.0-20190530182044-ad28b68e88f1 // indirect
 	golang.org/x/text v0.3.2 // indirect
-	gopkg.in/yaml.v2 v2.2.2
+	gopkg.in/yaml.v2 v2.2.8
 )
